@@ -1,0 +1,15 @@
+<div class="form-container">
+	<header class="brand">
+		<h1><small>i</small>Download</h1>
+	</header>
+	<section class="the-form">
+		<%= simple_form_for(:url, :url => makerequest_path , :action => :makerequest, :multipart => true, :method => :get ,remote: true ) do |f| %>
+			<%= f.input :instaurl,:wrapper => false , input_html:{:placeholder => 'https://www.instagram.com/p/BiPMOexntUC/', type: :text, autofocus: true, autocomplete: :off}, :label => "url do instagram" %>
+			<%= f.button :submit, 'Buscar' %>
+		<% end %>		
+	</section>
+</div>
+<div id="rcontainer" class="results-container">	
+</div>
+
+ 

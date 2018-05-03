@@ -1,0 +1,29 @@
+<div class="info-wrapper">
+	<div class="image_video-wrapper">
+		<% if (@postData.key?(:imgUrl)) %>
+			<%= image_tag(@postData[:imgUrl]) %>
+		<% elsif (@postData.key?(:videoUrl)) %>
+			<video width="350" controls>
+			  <source src="<%= @postData[:videoUrl] %>" type="video/mp4">  
+			  Your browser does not support HTML5 video.
+			</video>
+		<% end %>				
+	</div>
+	<div class="content-wrapper">
+	
+		<div class="element author">
+			<label>Autor: </label>
+			<h3><%= link_to "@#{@postData[:author]}", "https://www.instagram.com/#{@postData[:author]}", target: :"_blank" %></h3>
+		</div>	
+	
+	
+		<div class="element link">
+			<label>Link do Instagram: </label>
+			<%= link_to @postData[:link], @postData[:link], target: :"_blank" %>
+		</div>
+	
+		<div class="element download">		
+			<%= link_to "Download", @postData.key?(:imgUrl) ? @postData[:imgUrl] : @postData[:videoUrl], target: :"_blank"  %>
+		</div>	
+	</div>	
+</div>
