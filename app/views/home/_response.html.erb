@@ -10,12 +10,12 @@
 		<% end %>				
 	</div>
 	<div class="content-wrapper">
-	
+	<% if @postData.key?(:author) %>
 		<div class="element author">
 			<label>Autor: </label>
 			<h3><%= link_to "@#{@postData[:author]}", "https://www.instagram.com/#{@postData[:author]}", target: :"_blank" %></h3>
 		</div>	
-	
+	<% end %>
 	
 		<div class="element link">
 			<label>Link do Instagram: </label>
