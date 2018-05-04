@@ -199,7 +199,32 @@ html, body {
 		}
 	}
 }
-
+.copyright{
+	position: absolute;
+	z-index: 4;
+	width: 100%;	
+	padding: 15px;
+	box-sizing:border-box;
+	text-align: right;
+	color: #fff; 
+	bottom: 0px;
+	a{
+		color:#4e32ec;
+	}
+}
+@media (min-width: 1450px) {
+	.form-container{
+		top: 5%;
+			header{
+				h1{
+					font-size: 6em;
+				}
+			}		
+	}
+	.results-container{
+		top: 38%;
+	}
+}
 @media (max-width: 700px) {
 	.form-container{
 		width: 100%;
@@ -228,5 +253,8 @@ html, body {
 				width: 100%;
 			}
 		}
+	}
+	.copyright{{
+		text-align: center;
 	}
 }
