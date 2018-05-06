@@ -39,8 +39,9 @@ html, body {
 	top:0;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	background-image: url("/assets/001");
+	bottom: 0;	
+	overflow: hidden;
+	background-image: url("/assets/005");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -69,7 +70,7 @@ html, body {
 	width: 700px;	
 	left: 50%;
 	margin-left: -350px;
-	top: 2.2%;
+	top: 2%;
 	box-sizing:border-box;
 	text-align: center;
 	header{
@@ -78,10 +79,11 @@ html, body {
 			small{
 				font-size: 70%;
 			}
-			font-size: 5.175em;
+			font-size: 4.575em;
 			margin-top: 0px;
 			margin-bottom: 10px;
 			color:#fff;
+			line-height: 1.2em;
 		}
 	}
 	.the-form{
@@ -137,7 +139,7 @@ html, body {
 	width: 700px;
 	left: 50%;
 	margin-left: -350px;
-	top: 48%;
+	top: 43%;
 	background-color: rgba(255,255,255,0.7);
 	box-sizing: border-box;
 	padding: 15px;
@@ -258,3 +260,5 @@ html, body {
 		text-align: center;
 	}
 }
+
+
